@@ -1,0 +1,29 @@
+EE 450 
+Socket Programming
+
+a. Name: Chufan Deng
+b. Student ID: 6202597662
+c. What you have done in the assignment
+	- I learned TCP/UDP socket establishment from the video and the guide professor provided. So I started setting up socket connections at the beginning. Then I made it transferring file contents and made the servers doing operations and calculations, and sent results back. During the process, it helped me review C programming a lot. 
+
+d. What your code files are and what each one of them does. (Please do not repeat the project description, just name your code files and briefly mention what they do).
+	- server_or.c (Do bitwise OR operation and send the result back to edge server)
+	- server_and.c (Do bitwise AND operation and send the result back to edge server)
+	- edge.c (Get requests from client side and send it respectively to particular backend servers. Then receive the results and send them back to the client.)
+	- client.c (Read a file and send the content as a request to the edge server. Then receive the results and print them on the screen.)
+	- (Makefile) (Help compile the c files and run the servers.)
+
+e. What the TA should do to run your programs. (Any specific order of events should be mentioned.)
+	- make all (compile)
+	- make server_or
+	- make server_and
+	- make edge
+	- ./client xxx.txt
+	Then, we see the results.
+
+f. The format of all the messages exchanged.
+	- Stirngs (Char[100]). 
+g. Any idiosyncrasy of your project. It should say under what conditions the project fails, if any.
+	- No.
+h. Reused Code: Did you use code from anywhere for your project? If not, say so. If so, say what functions and where they're from. (Also identify this with a comment in the source code.)
+	- I used some codes that are from the video on TCP/UDP socket setting up, provided by the project pdf.
